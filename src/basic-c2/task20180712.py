@@ -1,8 +1,10 @@
-# 掛け算九九を表示するプログラム
+# coding: UTF-8
+# 掛け算九九
 
-str_line = 0
+str_line = ''
 for x in range(1 , 10):
+    str_line = ''
     for y in range(1 , 10):
-        str_line = x * y
-        str_line = str(str_line).rjust(3)
-        print(str_line)
+        crossed = x * y
+        str_line = str_line + str(crossed).rjust(3)
+    print(str_line) # ここまで出来ました
