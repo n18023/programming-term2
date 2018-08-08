@@ -13,5 +13,9 @@ for item_name in items:
     count = float(input_count)
 
     # 変数total_priceに果物1個の値段と変数countを掛けた値を代入してください
+    price = items[item_name]
+    total_price = price * count
 
-    # TODO:変数total_priceと型変換を用いて、「支払い金額は◯◯円です」となるように出力してください
+    # 変数total_priceと型変換を用いて、「支払い金額は◯ ◯ 円です」となるように出力してください
+    s = '支払金額は{0}円です'.format(total_price)
+    print(s)
